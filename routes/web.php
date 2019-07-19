@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@index')->name('list-users');
+Route::get('detail/{id}', 'PageController@show')->name('detail');
+Route::get('create', 'PageController@create')->name('create');
+Route::post('store', 'PageController@store')->name('store');
+Route::get('edit/{id}', 'PageController@edit')->name('edit');
+Route::post('update/{id}', 'PageController@update')->name('update');
+Route::get('delete/{id}', 'PageController@destroy')->name('delete');
+

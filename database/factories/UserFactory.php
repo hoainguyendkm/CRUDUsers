@@ -20,8 +20,8 @@ $factory->define(User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => Hash::make(1),
         'birthday' => $faker->date($format = 'd-m-Y', $max = 'now'),
-        'sex' => rand(1,2)
+        'sex' => rand(1,2),
+        'address' => $faker->address
     ];
 });

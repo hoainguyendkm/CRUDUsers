@@ -1,0 +1,11 @@
+body{font-family: Roboto; font-size: 14px;}
+a{color: white}
+a:hover{text-decoration: none}
+.header{background-color:#7ec07a; text-align: center; }
+.content{padding: 50px 0}
+.intro{background-color: #7ec07a; padding: 10px}
+.action a{padding: 0 5px}
+.title{position: relative;}
+.btn-new{position: absolute;right: 0 ;top: 0;background-color: green;padding: 5px;}
+.btn-new a{color: white}
+
